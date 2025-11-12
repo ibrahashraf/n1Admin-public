@@ -1,0 +1,25 @@
+/* Ensure Tailwind CSS is installed and configured */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+input, textarea {
+    @apply border-b border-gray-300 px-3 py-1 w-full  transition;
+}
+input:focus, textarea:focus, select:focus {
+    @apply  outline-none border-gray-700 ;
+}
+h1 {
+    @apply text-black text-2xl font-semibold mb-10;
+}
+.btn-primary {
+    @apply  border-2 border-gray-950 bg-gray-950 text-white px-4 py-1 rounded-lg font-medium;
+}
+.btn-primary:hover {
+    @apply bg-white text-gray-950 transition;
+}
+.btn-secondary {
+    @apply  border-2 border-gray-950 px-4 py-1 rounded-lg font-medium ;
+}
+.btn-secondary:hover {
+    @apply bg-gray-950 text-white transition;
+}
